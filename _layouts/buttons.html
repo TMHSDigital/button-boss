@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <style>
+        /* Additional custom styles if needed */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="/">B</a></li>
+            <li><a href="/buttons">Buttons</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <hgroup>
+            <h1>{{ page.title }}</h1>
+            <h2>{{ page.description }}</h2>
+        </hgroup>
+    </header>
+    <div id="page" class="showcase">
+        <hgroup>
+            <h3>Example Button Showcase <em>(<a href="#">More Info</a>)</em></h3>
+        </hgroup>
+        <div class="gallery">
+            <ul>
+                <li>
+                    <a href="{{ page.link }}" class="button button-primary">{{ page.button_text }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Button Boss. All rights reserved.</p>
+    </footer>
+</body>
+</html>
