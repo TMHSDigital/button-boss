@@ -1,5 +1,24 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll specific
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+
+# Bundler dependencies
+/vendor/bundle/
+/vendor/cache/
+/vendor/gems/
+/vendor/ruby/
+
+# VS Code specific
+.vscode/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Temporary files
+**/*.swp
+**/*.swo
+*.DS_Store
