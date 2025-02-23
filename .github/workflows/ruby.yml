@@ -12,7 +12,13 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0'
+        ruby-version: '2.6'
+
+    - name: Cache bundler gems
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
 
     - name: Install Jekyll and Bundler
       run: |
@@ -24,4 +30,5 @@ jobs:
 
     - name: Test Site
       run: |
-        jekyll serve
+        bundle install --path vendor/bundle
+        bundle exec jekyll build

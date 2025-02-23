@@ -22,8 +22,8 @@ title: TMHS Button Boss
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   For all of your button needs.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/repository-name"  # If not deploying to user/organization domain
+url: "https://username.github.io"
 twitter_username: jekyllrb
 github_username: jekyll
 
